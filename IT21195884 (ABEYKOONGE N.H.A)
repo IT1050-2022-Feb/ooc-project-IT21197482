@@ -1,0 +1,97 @@
+
+
+class Customer {
+private:
+ int cusid;
+ string cusName;
+ string cusAddress;         
+ int cusAge;                  
+ Assign *planID;
+ Order *orderID;
+
+
+
+public:
+ Customer();
+ Customer(string pid, string pname, string pAddress, int pAge);
+ void editprofile();
+ void viewpackages();
+}; 
+
+
+Customer::Customer() {}
+Customer::Customer(int id, string name, string Address, int Age)
+{
+ cusid = id;
+ cusname = name;
+ cusAddress = Address;
+ cusAge = Age;
+}
+void Customer::Customer(){
+ cout<<"customer id     =" <<cusid <<endl;
+ cout<<"customer name   =" <<cusname <<endl;
+ cout<<"customer Address=" <<cusAddress <<endl;
+ cout<<"customer Age    =" <<cusAge <<endl;
+}
+void Customer::editprofile() {}
+void Customer::viewpackages() {}
+
+
+
+class OrderDetail {
+
+private:
+ int orderID;
+ int quantity;
+ double tax;
+ Order *order;
+ 
+
+public:
+ OrderDetail()
+ OrderDetail(int pOrderID, int pQuantity , double pTax);
+ void displayOrderDescription;
+
+
+OrderDetail::OrderDetail(){}
+OrderDetail::OrderDetail(int pOrderID, int pQuantity , double pTax)
+{
+orderID = pOrderID;
+quantity = pQuantity;
+tax = pTax;
+}
+
+
+void Package::displayOrderDescription()
+{
+	
+	cout<<"Order ID         =" <<orderID <<endl;
+	cout<<"Order Quantity   =" <<quantity <<endl;
+ 	cout<<"Added Tax        =" <<tax <<endl;
+ 	
+}
+
+
+
+
+//main program
+int main()
+{
+ Customer cus1;
+ OrderDetail odrDtl1;
+
+ 
+ return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
