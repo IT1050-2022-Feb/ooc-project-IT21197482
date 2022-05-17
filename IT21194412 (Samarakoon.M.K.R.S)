@@ -1,0 +1,56 @@
+class Payment { 
+private : 
+ int payid; 
+ string paymethod; 
+ double amount; 
+ Order *ord;
+public: 
+ Payment(); 
+ Payment(int ppayid, string ppaymethod, double pamount); 
+ int getPayment();
+}; 
+
+
+class Item {
+private:
+ string itemName;
+ int itemid;
+ string description;
+public:
+ Item()
+ Item(string pitemName, int pitemid, string pdescription);
+ void addItem;
+ void deleteItem;
+ void updateItem;
+};
+
+Payment::Payment(){}
+Payment::Payment(int ppayid, string ppaymethod, double pamount)
+{
+payid = ppayid;
+paymethod = ppaymethod;
+amount = pamount;
+}
+int Payment::getPayment()
+{
+return Payment;
+}
+
+
+Item::Item(){}
+Item::Item(string pitemName, int pitemid, string pdescription)
+{
+ itemName = pitemName;
+ itemid = pitemid;
+}
+void Item::updateItem(){}
+void Item::deleteItem(){}
+void Item::addItem(){}
+
+//main program
+intmain()
+{
+ Item itm1;
+ Payment pay1;
+ return 0;
+}
